@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #edf2f8;
+    padding: 30px;
+}
+.container{
+    background-color: #ffffff;
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    
+
+}
+.image{
+    max-width: 400px;
+}
+.image img{
+    width: 100%;
+    border-radius: 5px;
+}
+.content{
+    max-width: 300px;
+    padding: 10px;
+
+}
+h2{
+    font-size: 15px;
+    color: #50535d;
+}
+p{
+    color: #686767;
+}
+.content img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+h3{    
+    position: relative;
+    bottom: 55px;
+    left: 53px;
+    font-size: 15px;
+
+}
+h3::after{
+    content: '28 Jun 2020';
+    position: absolute;
+    left: 5px;
+    top: 20px;
+    color: #8a8a8a;
+    
+}
+.content::after{
+    content: url('images/icon-share.svg');
+    position: relative;
+    bottom: 85px;
+    left: 200px;
+
+   
+}
+@media (max-width:767px) {
+    body{
+        margin: 0;
+        padding: 2px;
+    }
+    .container{
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+}
